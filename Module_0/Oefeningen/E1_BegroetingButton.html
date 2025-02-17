@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<!-- Manier 1 -->
+<button onclick="this.innerText = (this.innerText === 'Hallo!' ? 'Tot ziens!' : 'Hallo!')">Hallo!</button>
+
+
+<!-- Manier 2 -->
+<button id="manier2">Hallo!</button>
+
+<script>
+let button2 = document.getElementById("manier2")
+
+button2.addEventListener("click", function() {
+    button2.textContent = "Tot Ziens!"
+})
+</script>
+
+<!-- Manier 3 -->
+<button id="manier3">Hallo!</button>
+
+<script src="javascript/E1_script.js"></script>
+
+</body>
+</html>
